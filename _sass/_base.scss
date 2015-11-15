@@ -1,0 +1,123 @@
+// Base Styles
+// ----------
+//
+// ==========
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// Clearfix
+// --------
+@mixin cf {
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+html {
+  // Use border-box for everything
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-primary-black;
+  padding-top: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+  &.red {
+    background-color: $color-primary-red;
+  }
+}
+
+.site-title__outer {
+  margin: 0 auto;
+  width: 205px;
+}
+a.site-title {
+  border-bottom: 0;
+  font-family: $font-family-brand;
+  display: inline-block;
+  color: $color-primary-grey;
+  font-size: 32px;
+  position: relative;
+  padding-bottom: 7px;
+  &:hover,
+  &:focus {
+    color: $color-primary-blue-lt;
+    border-bottom: 0;
+  }
+  .full-stop {
+    color: $color-primary-red;
+  }
+  .webdev {
+    font-size: 12px;
+    right: 10px;
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+.social-media-list {
+  width: 100px;
+  margin: 0 auto;
+  padding-left: 0;
+  @include cf;
+  a {
+    border-bottom: 0;
+  }
+  .icon svg {
+    width: 30px;
+    height: 30px;
+    &:hover {
+      path {
+        fill: $color-primary-grey;
+      }
+    }
+  }
+  li {
+    text-align: center;
+    float: left;
+    padding: 10px;
+    list-style-type: none;
+  }
+}
+.site-nav {
+  font-size: 20px;
+  text-align: center;
+  ul {
+    margin-left: 0;
+    li {
+      list-style-type: none;
+      text-transform: lowercase;
+    }
+  }
+  a {
+    border-bottom: 0;
+    color: $color-primary-grey;
+    &:hover,
+    &:focus  {
+      color: $color-primary-blue-lt;
+    }
+  }
+}
+
+

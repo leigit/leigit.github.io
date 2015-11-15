@@ -1,0 +1,18 @@
+# Site settings
+title: Leigh Gittoes
+email: leighgittoes@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://leigit.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
+twitter_username: leigit_
+github_username:  leigit
+
+# Build settings
+markdown: kramdown
+
+
+collections:
+  code:
+    output: true

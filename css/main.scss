@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Our variables
+$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
+$font-family-brand: 'Abril Fatface', serif;
+$font-family-base: 'Merriweather', serif;
+
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+// Width of the content area
+$content-width:    800px;
+
+///////////////
+$color-primary-blue-dk:   #2C3E50;
+$color-primary-red:       #FC4349;
+$color-primary-black:     #2F3030;
+$color-primary-blue-lt:   #3ABCDB;
+$color-primary-grey:      #E8E8E8;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "header"
+;
