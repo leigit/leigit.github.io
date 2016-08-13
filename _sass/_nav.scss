@@ -1,0 +1,23 @@
+.nav__main {
+  background: $color-brand-blue-dk;
+  float: left;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .nav__item {
+    float: left;
+    list-style-type: none;
+    .nav__link {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: $color-brand-orange-lt;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid $color-brand-orange-lt;
+      }
+    }
+  }
+}

@@ -1,3 +1,9 @@
-header.site-header {
+// header.site-header {
+//   width: 100%;
+// }
+
+.header__main {
+  background: $color-brand-blue-dk;
   width: 100%;
+  float: left;
 }

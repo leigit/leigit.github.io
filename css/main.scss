@@ -5,9 +5,7 @@
 
 
 // Our variables
-$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
-$font-family-brand: 'Abril Fatface', serif;
-$font-family-base: 'Merriweather', serif;
+$font-family-base: 'Montserrat', sans-serif;
 
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -19,15 +17,18 @@ $spacing-unit:     30px;
 $content-width:    800px;
 
 ///////////////
-$color-primary-blue-dk:   #2C3E50;
-$color-primary-red:       #FC4349;
-$color-primary-black:     #2F3030;
-$color-primary-blue-lt:   #3ABCDB;
-$color-primary-grey:      #E8E8E8;
+$color-brand-blue-dk:    rgb(53,69,86);
+$color-brand-blue:       rgb(100,194,209);
+$color-brand-grey:       rgb(204,204,204);
+$color-brand-orange:     rgb(236,128,53);
+$color-brand-orange-lt:  rgb(248,230,199);
+
+$color-white:            #ffffff;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "header"
+        "header",
+        "nav"
 ;

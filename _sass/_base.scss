@@ -28,96 +28,33 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
-  background-color: $color-primary-black;
-  padding-top: 80px;
+  margin: 0;
+  font-family: $font-family-base;
 }
 
 a {
   text-decoration: none;
-}
-
-.circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  margin: 0 auto;
-  &.red {
-    background-color: $color-primary-red;
-  }
-}
-
-.site-title__outer {
-  margin: 0 auto;
-  width: 205px;
-}
-a.site-title {
-  border-bottom: 0;
-  font-family: $font-family-brand;
-  display: inline-block;
-  color: $color-primary-grey;
-  font-size: 32px;
-  position: relative;
-  padding-bottom: 7px;
   &:hover,
   &:focus {
-    color: $color-primary-blue-lt;
-    border-bottom: 0;
-  }
-  .full-stop {
-    color: $color-primary-red;
-  }
-  .webdev {
-    font-size: 12px;
-    right: 10px;
-    bottom: 0;
-    position: absolute;
+    border-bottom: 1px solid $color-brand-blue-dk;
   }
 }
 
-.social-media-list {
-  width: 100px;
-  margin: 0 auto;
-  padding-left: 0;
-  @include cf;
-  a {
-    border-bottom: 0;
-  }
-  .icon svg {
-    width: 30px;
-    height: 30px;
-    &:hover {
-      path {
-        fill: $color-primary-grey;
+.logo {
+  float: left;
+  h1 {
+    margin: 0;
+    padding: 8px 0 0;
+    font-size: 18px;
+    a {
+      color: $color-brand-blue;
+      &:hover,
+      &:focus {
+        border-bottom: 0;
+        color: $color-brand-orange-lt;
+
       }
     }
   }
-  li {
-    text-align: center;
-    float: left;
-    padding: 10px;
-    list-style-type: none;
-  }
 }
-.site-nav {
-  font-size: 20px;
-  text-align: center;
-  ul {
-    margin-left: 0;
-    li {
-      list-style-type: none;
-      text-transform: lowercase;
-    }
-  }
-  a {
-    border-bottom: 0;
-    color: $color-primary-grey;
-    &:hover,
-    &:focus  {
-      color: $color-primary-blue-lt;
-    }
-  }
-}
-
-
